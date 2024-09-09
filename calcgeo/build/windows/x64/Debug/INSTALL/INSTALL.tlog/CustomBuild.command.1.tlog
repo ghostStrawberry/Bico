@@ -1,0 +1,10 @@
+^C:\USERS\ALUNO\DOCUMENTS\ADS4SEM\CALCGEO\BUILD\WINDOWS\CMAKEFILES\362DEBA2191D080BE7F4D30DFB1B34C9\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
